@@ -8,7 +8,7 @@
 <link href="index_files/libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="index_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="index_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.3.450">
+  <meta name="generator" content="quarto-1.4.549">
 
   <meta name="author" content="د. باسم بن صالح الصاعدي">
   <meta name="dcterms.date" content="2024-10-15">
@@ -30,71 +30,6 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
-    /* CSS for syntax highlighting */
-    pre > code.sourceCode { white-space: pre; position: relative; }
-    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-    pre > code.sourceCode > span:empty { height: 1.2em; }
-    .sourceCode { overflow: visible; }
-    code.sourceCode > span { color: inherit; text-decoration: inherit; }
-    div.sourceCode { margin: 1em 0; }
-    pre.sourceCode { margin: 0; }
-    @media screen {
-    div.sourceCode { overflow: auto; }
-    }
-    @media print {
-    pre > code.sourceCode { white-space: pre-wrap; }
-    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-    }
-    pre.numberSource code
-      { counter-reset: source-line 0; }
-    pre.numberSource code > span
-      { position: relative; left: -4em; counter-increment: source-line; }
-    pre.numberSource code > span > a:first-child::before
-      { content: counter(source-line);
-        position: relative; left: -1em; text-align: right; vertical-align: baseline;
-        border: none; display: inline-block;
-        -webkit-touch-callout: none; -webkit-user-select: none;
-        -khtml-user-select: none; -moz-user-select: none;
-        -ms-user-select: none; user-select: none;
-        padding: 0 4px; width: 4em;
-        color: #aaaaaa;
-      }
-    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-    div.sourceCode
-      { color: #003b4f; background-color: #f1f3f5; }
-    @media screen {
-    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-    }
-    code span { color: #003b4f; } /* Normal */
-    code span.al { color: #ad0000; } /* Alert */
-    code span.an { color: #5e5e5e; } /* Annotation */
-    code span.at { color: #657422; } /* Attribute */
-    code span.bn { color: #ad0000; } /* BaseN */
-    code span.bu { } /* BuiltIn */
-    code span.cf { color: #003b4f; } /* ControlFlow */
-    code span.ch { color: #20794d; } /* Char */
-    code span.cn { color: #8f5902; } /* Constant */
-    code span.co { color: #5e5e5e; } /* Comment */
-    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
-    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
-    code span.dt { color: #ad0000; } /* DataType */
-    code span.dv { color: #ad0000; } /* DecVal */
-    code span.er { color: #ad0000; } /* Error */
-    code span.ex { } /* Extension */
-    code span.fl { color: #ad0000; } /* Float */
-    code span.fu { color: #4758ab; } /* Function */
-    code span.im { color: #00769e; } /* Import */
-    code span.in { color: #5e5e5e; } /* Information */
-    code span.kw { color: #003b4f; } /* Keyword */
-    code span.op { color: #5e5e5e; } /* Operator */
-    code span.ot { color: #003b4f; } /* Other */
-    code span.pp { color: #ad0000; } /* Preprocessor */
-    code span.sc { color: #5e5e5e; } /* SpecialChar */
-    code span.ss { color: #20794d; } /* SpecialString */
-    code span.st { color: #20794d; } /* String */
-    code span.va { color: #111111; } /* Variable */
-    code span.vs { color: #20794d; } /* VerbatimString */
-    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
   <link rel="stylesheet" href="index_files/libs/revealjs/dist/theme/quarto.css">
   <link href="index_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
@@ -224,7 +159,8 @@
   }
 
   .callout.callout-titled .callout-body > .callout-content > :last-child {
-    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0;
   }
 
   .callout.callout-titled .callout-icon::before {
@@ -387,9 +323,15 @@
       margin-right: 0; 
     }
   </style>
-  
-  <script src="index_files/libs/kePrint-0.0.1/kePrint.js"></script>
-  <link href="index_files/libs/lightable-0.0.1/lightable.css" rel="stylesheet">
+  <link href="index_files/libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet">
+  <script src="index_files/libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+  <script src="index_files/libs/plotly-binding-4.10.4/plotly.js"></script>
+  <script src="index_files/libs/typedarray-0.1/typedarray.min.js"></script>
+  <script src="index_files/libs/jquery-3.5.1/jquery.min.js"></script>
+  <link href="index_files/libs/crosstalk-1.2.1/css/crosstalk.min.css" rel="stylesheet">
+  <script src="index_files/libs/crosstalk-1.2.1/js/crosstalk.min.js"></script>
+  <link href="index_files/libs/plotly-htmlwidgets-css-2.11.1/plotly-htmlwidgets.css" rel="stylesheet">
+  <script src="index_files/libs/plotly-main-2.11.1/plotly-latest.min.js"></script>
 </head>
 <body class="quarto-light">
   <div class="reveal">
@@ -414,13 +356,13 @@
 <div class="column fragment" style="width:50%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="Screenshot%202024-10-15%20205714.png" style="width:100.0%"></p>
+<p><img data-src="Screenshot%202024-10-15%20205714.png" class="quarto-figure quarto-figure-center" style="width:100.0%"></p>
 </figure>
 </div>
 </div><div class="column fragment" style="width:50%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="shutterstock_1088565344.png" style="width:100.0%"></p>
+<p><img data-src="shutterstock_1088565344.png" class="quarto-figure quarto-figure-center" style="width:100.0%"></p>
 </figure>
 </div>
 </div>
@@ -434,32 +376,32 @@
 <section id="section" class="title-slide slide level1 center">
 <h1></h1>
 
-<img data-src="test10_1.png" style="width:100.0%" class="r-stretch quarto-figure-center"></section>
+<img data-src="test10_10.png" class="quarto-figure quarto-figure-center r-stretch" style="width:100.0%"></section>
 
 <section id="section-1" class="title-slide slide level1 center">
 <h1></h1>
 
-<img data-src="Untitled-2024-10-15-2155.png" style="width:50.0%" class="r-stretch quarto-figure-center"></section>
+<img data-src="Untitled-2024-10-15-2155.png" class="quarto-figure quarto-figure-center r-stretch" style="width:50.0%"></section>
 
 <section id="section-2" class="title-slide slide level1 center">
 <h1></h1>
 
-<img data-src="Screenshot%202024-10-15%20205714.png" style="width:100.0%" class="r-stretch quarto-figure-center"></section>
+<img data-src="Screenshot%202024-10-15%20205714.png" class="quarto-figure quarto-figure-center r-stretch" style="width:100.0%"></section>
 
 <section id="section-3" class="title-slide slide level1 center">
 <h1></h1>
 
-<img data-src="Screenshot%202024-10-15%20220801.png" style="width:80.0%" class="r-stretch quarto-figure-center"></section>
+<img data-src="Screenshot%202024-10-15%20220801.png" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"></section>
 
 <section>
 <section id="section-4" class="title-slide slide level1 center">
 <h1></h1>
 
-<img data-src="Screenshot%202024-10-15%20224246.png" style="width:80.0%" class="r-stretch quarto-figure-center"></section>
+<img data-src="Screenshot%202024-10-15%20224246.png" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"></section>
 <section id="mnist-dataset" class="slide level2">
 <h2>MNIST Dataset</h2>
 
-<img data-src="mnist-3.0.1.png" style="width:60.0%" class="r-stretch quarto-figure-center"><div class="cell">
+<img data-src="mnist-3.0.1.png" class="quarto-figure quarto-figure-center r-stretch" style="width:60.0%"><div class="cell">
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 70000    28    28</code></pre>
 </div>
@@ -468,7 +410,7 @@
 <section id="section-5" class="slide level2">
 <h2></h2>
 
-<img data-src="test100.png" style="width:100.0%" class="r-stretch quarto-figure-center"></section>
+<img data-src="test100.png" class="quarto-figure quarto-figure-center r-stretch" style="width:100.0%"></section>
 <section id="section-6" class="slide level2">
 <h2></h2>
 <div class="cell">
@@ -480,24 +422,24 @@
 <section id="section-7" class="slide level2">
 <h2></h2>
 
-<img data-src="test1000.png" style="width:70.0%" class="r-stretch quarto-figure-center"></section>
+<img data-src="test1000.png" class="quarto-figure quarto-figure-center r-stretch" style="width:70.0%"></section>
 <section id="section-8" class="slide level2">
 <h2></h2>
 
-<img data-src="Untitled-2024-10-16-2151.png" style="width:1.0%" class="r-stretch quarto-figure-center"></section>
+<img data-src="Untitled-2024-10-16-2151.png" class="quarto-figure quarto-figure-center r-stretch" style="width:1.0%"></section>
 <section id="section-9" class="slide level2">
 <h2></h2>
 <div class="columns">
 <div class="column fragment" style="width:50%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="test11.png" style="width:100.0%"></p>
+<p><img data-src="test11.png" class="quarto-figure quarto-figure-center" style="width:100.0%"></p>
 </figure>
 </div>
 </div><div class="column fragment" style="width:50%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="test12.png" style="width:100.0%"></p>
+<p><img data-src="test12.png" class="quarto-figure quarto-figure-center" style="width:100.0%"></p>
 </figure>
 </div>
 </div>
@@ -506,7 +448,7 @@
 <section id="logistic-regression" class="slide level2">
 <h2>Logistic Regression</h2>
 
-<img data-src="test12.png" style="width:100.0%" class="r-stretch quarto-figure-center"><div class="cell">
+<img data-src="test12.png" class="quarto-figure quarto-figure-center r-stretch" style="width:100.0%"><div class="cell">
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 784</code></pre>
 </div>
@@ -540,900 +482,145 @@
 <section id="section-11" class="slide level2">
 <h2></h2>
 
-<img data-src="test13.png" style="width:100.0%" class="r-stretch quarto-figure-center"></section>
+<img data-src="test13.png" class="quarto-figure quarto-figure-center r-stretch" style="width:100.0%"></section>
 <section id="section-12" class="slide level2">
 <h2></h2>
 
-<img data-src="test14.png" style="width:100.0%" class="r-stretch quarto-figure-center"></section>
-<section id="دراسة-بي-يو-ار-pure-study" class="slide level2">
-<h2>دراسة بي يو ار PURE Study</h2>
-<aside class="notes">
-<p>للحصول على هذه الأرقام، قام الباحثون بتقسيم مجموعة المشاركين في الدراسة البالغ عددهم 135,335 (والتي نسميها “العينة”) إلى 5 مجموعات (“خمسية”). تحتوي الخمسية الأولى على 20% من الأشخاص الذين لديهم أقل نسبة تناول، وتحتوي الخمسية الخامسة على 20% من الأشخاص الذين لديهم أعلى نسبة تناول. ثم قام الباحثون بحساب عدد مرات وفاة الأشخاص في كل من هذه المجموعات خلال فترة</p>
-<p>إذا كان هذا الرقم أكبر من واحد، فهذا يعني أن الأشخاص في المجموعة أكثر عرضة للوفاة مقارنة بالأشخاص في الخمسية الأدنى. بينما إذا كان أقل من واحد، فهذا يعني أن الأشخاص في المجموعة أقل عرضة للوفاة.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-<div>
-<ul>
-<li class="fragment"><p>135,000 participants, 18 countries</p></li>
-<li class="fragment"><p>سعى الباحثون الى تحليل لكيفية ارتباط تناول فئات مختلفة من المغذيات الكبرى (بما في ذلك الدهون المشبعة والكربوهيدرات) باحتمال الوفاة خلال الوقت الذي تمت متابعة الأشخاص فيه.</p></li>
-<li class="fragment"><p>راقب ولاحظ الباحثين، المشاركين في الدراسة اكثر من 8 سنوات</p></li>
-</ul>
-</div>
-</section></section>
-<section>
-<section id="section-13" class="title-slide slide level1 center">
-<h1></h1>
-<div class="columns">
-<div class="column fragment" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="PureDeathSatFat-1.png" style="width:75.0%"></p>
-</figure>
-</div>
-</div><div class="column fragment" style="width:50%;">
-<div>
-<ul>
-<li class="fragment"><p>الشكل واضح جدًا: الأشخاص الذين تناولوا المزيد من الدهون المشبعة كانوا أقل عرضة للوفاة خلال الدراسة.</p></li>
-<li class="fragment"><p>هذا المثال يوضح كيف يمكننا استخدام الإحصائيات لوصف مجموعة بيانات معقدة من خلال مجموعة أرقام أبسط بكثير.</p></li>
-<li class="fragment"><p>إذا كان علينا النظر إلى بيانات كل مشارك في الدراسة في نفس الوقت، سنكون مثقلين بالبيانات. سيكون من الصعب أيضًا رؤية النمط الذي يظهر عندما يتم وصفها بشكل أبسط.</p></li>
-</ul>
-</div>
-<aside class="notes">
-<p>• على الرغم من الأرقام في الشكل، نعلم أيضًا أن هناك الكثير من عدم اليقين في البيانات. • هناك بعض الأشخاص الذين توفوا مبكرًا على الرغم من أنهم اتبعوا نظامًا غذائيًا منخفض الكربوهيدرات، وهناك آخرون تناولوا كميات كبيرة من الكربوهيدرات لكنهم عاشوا حتى سن متقدمة. • بالنظر إلى هذا التباين، نريد أن نقرر ما إذا كانت العلاقات التي نراها في البيانات كبيرة بما يكفي بحيث لا نتوقع حدوثها عشوائيًا. • توفر لنا الإحصائيات الأدوات لاتخاذ هذه القرارات. • غالبًا ما يرى الناس من الخارج أن هذا هو الغرض الرئيسي من الإحصائيات. • ولكن كما سنرى طوال الدورة، فإن الحاجة إلى اتخاذ قرارات واضحة بناءً على أدلة غير واضحة قد قادت الباحثين في كثير من الأحيان إلى الطريق الخطأ. • إذا كانت استنتاجاتنا محدودة بالأشخاص المحددين في الدراسة في وقت معين، فلن تكون الدراسة مفيدة جدًا. • بناءً على البيانات، نود أيضًا إجراء تنبؤات حول النتائج المستقبلية. • على سبيل المثال، قد ترغب شركة تأمين على الحياة في استخدام بيانات حول تناول شخص معين للدهون والكربوهيدرات للتنبؤ بمدة حياته المحتملة. • جانب مهم من التنبؤ هو أنه يتطلب منا التعميم من البيانات التي لدينا بالفعل إلى بعض الحالات الأخرى، غالبًا في المستقبل. • بشكل عام، يجب على الباحثين أن يفترضوا أن عينتهم المحددة تمثل مجموعة أكبر من السكان. • يتطلب ذلك منهم الحصول على العينة بطريقة توفر صورة غير متحيزة عن السكان. • على سبيل المثال، إذا كانت دراسة PURE قد جندت فقط مشاركين نباتيين، فمن المحتمل أننا لن نرغب في تعميم النتائج على غير النباتيين.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</div>
-</div>
-</section>
-<section id="الأفكار-الكبرى-في-الإحصاء" class="slide level2">
-<h2>الأفكار الكبرى في الإحصاء</h2>
-<div>
-<ul>
-<li class="fragment"><p>التعلم من البيانات</p></li>
-<li class="fragment"><p>التجميع أو تلخيص المتغيرات</p></li>
-<li class="fragment"><p>عدم اليقين</p></li>
-<li class="fragment"><p>أخذ عينة صحيحة من مجتمع الدراسة</p></li>
-<li class="fragment"><p>السببية والإحصاء</p></li>
-</ul>
-</div>
-</section>
-<section id="التعلم-من-البيانات" class="slide level2">
-<h2>التعلم من البيانات</h2>
-<aside class="notes">
-<ul>
-<li><p>إحدى الطرق للتفكير في الإحصائيات هي اعتبارها مجموعة من الأدوات التي تمكننا من التعلم من البيانات.</p></li>
-<li><p>في أي موقف، نبدأ بمجموعة من الأفكار أو الفرضيات حول ما قد يكون الحال.</p></li>
-<li><p>في دراسة PURE، قد يكون الباحثون قد بدأوا بتوقع أن تناول المزيد من الدهون سيؤدي إلى معدلات وفاة أعلى، نظرًا للمعتقدات السلبية السائدة حول الدهون المشبعة.</p></li>
-<li><p>لاحقًا في الدورة، سنقدم فكرة المعرفة السابقة، التي تهدف إلى عكس المعرفة التي نحملها إلى الموقف.</p></li>
-<li><p>توفر لنا الإحصائيات طريقة لوصف كيفية استخدام البيانات الجديدة بشكل أفضل لتحديث معتقداتنا</p></li>
-</ul>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-<ul>
-<li><p>إن إحدى الطرق التي يمكننا من خلالها التفكير في الإحصاءات هي أنها مجموعة من الأدوات التي تمكننا من التعلم من البيانات. وفي أي موقف، نبدأ بمجموعة من الأفكار أو الفرضيات حول ما قد يكون عليه الحال.</p></li>
-<li><p>توفر لنا الإحصائيات طريقة لوصف كيفية استخدام البيانات الجديدة على أفضل وجه لتحديث معتقداتنا، وبهذه الطريقة توجد روابط عميقة بين الإحصائيات وعلم النفس.</p></li>
-</ul>
-</section>
-<section id="التجميع-أو-تلخيص-المتغيرات" class="slide level2">
-<h2>التجميع أو تلخيص المتغيرات</h2>
-<aside class="notes">
-<ul>
-<li><p>طريقة أخرى للتفكير في الإحصائيات هي اعتبارها “علم التخلص من البيانات”.</p></li>
-<li><p>في مثال دراسة PURE أعلاه، أخذنا أكثر من 100,000 رقم وقمنا بتكثيفها إلى عشرة.</p></li>
-<li><p>هذا النوع من التجميع هو أحد أهم المفاهيم في الإحصائيات.</p></li>
-<li><p>توفر لنا الإحصائيات طرقًا لتوصيف هيكل مجموعات البيانات، مع أسس نظرية تشرح لماذا يعمل هذا عادةً بشكل جيد.</p></li>
-<li><p>ومع ذلك، من المهم أيضًا أن نتذكر أن التجميع يمكن أن يذهب بعيدًا جدًا. في بعض الأحيان، يمكن أن يوفر الملخص صورة مضللة عن البيانات.</p></li>
-</ul>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-<ul>
-<li>هناك طريقة أخرى للتفكير في الإحصاء وهي “علم التخلص من البيانات”.
-<ul>
-<li>مثلا في الدراسة السابقة، بي يو ار، تمت دراسة اكثر من 100,000 متغير. لكن تم تجميعها وتلخيصها في النهاية الى 10 متغيرات.</li>
-</ul></li>
-</ul>
-</section>
-<section id="عدم-اليقين" class="slide level2">
-<h2>عدم اليقين</h2>
-<aside class="notes">
-<ul>
-<li>العالم مكان مليء بالشك وعدم ضمان حدوث او عدم حدوث الاشياء.</li>
-<li>نحن نعلم الآن أن تدخين السجائر يسبب سرطان الرئة، لكن هذه العلاقة سببية احتمالية.</li>
-<li>رجل يبلغ من العمر 68 عامًا يدخن علبتين يوميًا لمدة 50 عامًا ويستمر في التدخين لديه خطر بنسبة 15% للإصابة بسرطان الرئة.</li>
-<li>هذه النسبة أعلى بكثير من فرصة الإصابة بسرطان الرئة لدى غير المدخنين.</li>
-<li>ومع ذلك، يعني هذا أيضًا أن هناك العديد من الأشخاص الذين يدخنون طوال حياتهم ولا يصابون بسرطان الرئة.</li>
-<li>توفر لنا الإحصاءات الأدوات لتوصيف عدم اليقين، واتخاذ القرارات في ظل عدم اليقين، وإجراء التنبؤات التي يمكننا قياس عدم يقينها.</li>
-<li>غالبًا ما يرى المرء الصحفيين يكتبون أن الباحثين العلميين “أثبتوا” بعض الفرضيات.</li>
-<li>لكن التحليل الإحصائي لا يمكنه أبدًا “إثبات” فرضية، بمعنى إثبات أنها يجب أن تكون صحيحة.</li>
-<li>يمكن للإحصاءات أن تزودنا بالأدلة، لكنها دائمًا مؤقتة وخاضعة لعدم اليقين الذي يكون دائمًا حاضرًا في العالم الحقيقي.</li>
-</ul>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-<ul>
-<li><p>فنحن نعلم الآن أن التدخين يسبب سرطان الرئة، ولكن هذا الارتباط احتمالي.</p></li>
-<li><p>الرجل الذي يبلغ من العمر 68 عامًا والذي يدخن علبتين يوميًا على مدار الخمسين عامًا الماضية ويستمر في التدخين لديه خطر بنسبة 15% (1 من 7) للإصابة بسرطان الرئة، وهي نسبة أعلى بكثير من فرصة الإصابة بسرطان الرئة لدى غير المدخن.</p></li>
-</ul>
-</section>
-<section id="أخذ-عينة-صحيحة-من-مجتمع-الدراسة" class="slide level2">
-<h2>أخذ عينة صحيحة من مجتمع الدراسة</h2>
-<ul>
-<li>تقول فكرة أخذ العينات أننا نستطيع تلخيص مجتمع بأكمله بناءً على عدد صغير فقط من العينات من المجتمع، طالما تم الحصول على تلك العينات بالطريقة الصحيحة.
-<ul>
-<li>فمثلا، في دراسة ال بي يو أر، حجم العينة حوالي 135000 شخص، لكن هدفها كان تقديم رؤى حول مليارات البشر الذين يشكلون السكان الذين تم أخذ عينات منهم</li>
-</ul></li>
-</ul>
+<img data-src="test14.png" class="quarto-figure quarto-figure-center r-stretch" style="width:100.0%"></section>
+<section id="convolutional-neural-networks-cnn" class="slide level2">
+<h2>Convolutional Neural Networks (CNN)</h2>
 
-<img data-src="sample-size-definition.png" style="width:50.0%" class="r-stretch quarto-figure-center"><aside class="notes">
-<ul>
-<li>على سبيل المثال، شملت دراسة PURE عينة من حوالي 135,000 شخص.</li>
-<li>لكن هدفها كان تقديم رؤى حول مليارات البشر الذين يشكلون السكان الذين تم أخذ هؤلاء الأشخاص منهم.</li>
-<li>الطريقة التي يتم بها الحصول على عينة الدراسة حاسمة، لأنها تحدد مدى قدرتنا على تعميم النتائج.</li>
-<li>من الأفكار الأساسية الأخرى حول أخذ العينات هو أنه بينما تكون العينات الأكبر دائمًا أفضل (من حيث قدرتها على تمثيل السكان بالكامل بدقة)، هناك عوائد متناقصة كلما كبرت العينة.</li>
-<li>في الواقع، يتبع معدل انخفاض فائدة العينات الأكبر قاعدة رياضية بسيطة، حيث ينمو بمقدار الجذر التربيعي لحجم العينة.</li>
-<li>بحيث أنه من أجل مضاعفة جودة بياناتنا، نحتاج إلى مضاعفة حجم عينتنا أربع مرات.</li>
-</ul>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="السببية-والإحصاء" class="slide level2">
-<h2>السببية والإحصاء</h2>
-<ul>
-<li><p>يبدو أن دراسة PURE قدمت أدلة قوية إلى حد ما على وجود علاقة إيجابية بين تناول الدهون المشبعة والعيش لفترة أطول، ولكن هذا لا يخبرنا بما نريد أن نعرفه حقًا: إذا تناولنا المزيد من الدهون المشبعة، فهل سيؤدي ذلك إلى عيشنا لفترة أطول؟</p>
-<ul>
-<li>والسبب في ذلك هو أننا لا نعلم ما إذا كانت هناك علاقة سببية مباشرة بين تناول الدهون المشبعة والعيش لفترة أطول.</li>
-</ul></li>
-<li><p>على سبيل المثال، قد يتخيل البعض أن الأشخاص الأكثر ثراءً يتناولون المزيد من الدهون المشبعة، وأن الأشخاص الأغنى يميلون للعيش لفترة أطول. لكن طول حياتهم ليس بالضرورة بسبب تناول الدهون — بل قد يكون بسبب الرعاية الصحية الأفضل، أو تقليل الضغط النفسي، أو جودة الطعام الأفضل، أو العديد من العوامل الأخرى.</p>
-<ul>
-<li>الإرتباط لا يعني السببية</li>
-</ul></li>
-</ul>
-<aside class="notes">
-<ul>
-<li>يبدو أن دراسة PURE قدمت أدلة قوية على وجود علاقة إيجابية بين تناول الدهون المشبعة والعيش لفترة أطول.</li>
-<li>ومع ذلك، هذا لا يخبرنا بما نريد معرفته حقًا: إذا تناولنا المزيد من الدهون المشبعة، هل سيؤدي ذلك إلى العيش لفترة أطول؟</li>
-<li>هذا لأننا لا نعرف ما إذا كانت هناك علاقة سببية مباشرة بين تناول الدهون المشبعة والعيش لفترة أطول.</li>
-<li>البيانات تتوافق مع مثل هذه العلاقة، لكنها تتوافق أيضًا مع عوامل أخرى قد تسبب كلاً من زيادة تناول الدهون المشبعة والعيش لفترة أطول.</li>
-<li>على سبيل المثال، من المحتمل أن الأشخاص الأغنياء يتناولون المزيد من الدهون المشبعة ويميلون للعيش لفترة أطول.</li>
-<li>حياتهم الأطول ليست بالضرورة بسبب تناول الدهون.</li>
-<li>قد يكون ذلك بسبب الرعاية الصحية الأفضل، تقليل الضغط النفسي، جودة الطعام الأفضل، أو العديد من العوامل الأخرى.</li>
-<li>حاول محققو دراسة PURE أخذ هذه العوامل في الاعتبار.</li>
-<li>لكن لا يمكننا أن نكون متأكدين من أن جهودهم أزالت تمامًا تأثيرات العوامل الأخرى.</li>
-<li>حقيقة أن العوامل الأخرى قد تفسر العلاقة بين تناول الدهون المشبعة والموت هي مثال على القول بأن “الارتباط لا يعني السببية”.</li>
-<li>على الرغم من أن الأبحاث الرصدية (مثل دراسة PURE) لا يمكنها إثبات العلاقات السببية بشكل قاطع، فإننا نعتقد عمومًا أن السببية يمكن إثباتها باستخدام دراسات تتحكم وتتحكم في عامل معين.</li>
-<li>في الطب، يشار إلى مثل هذه الدراسة بالتجربة العشوائية المضبوطة (RCT).</li>
-<li>لنفترض أننا أردنا إجراء تجربة عشوائية مضبوطة لفحص ما إذا كان زيادة تناول الدهون المشبعة يزيد من العمر.</li>
-<li>للقيام بذلك، سنقوم بأخذ عينة من الناس، ثم نعينهم إما لمجموعة العلاج أو مجموعة التحكم.</li>
-<li>مجموعة العلاج: الأشخاص الذين يُطلب منهم زيادة تناول الدهون المشبعة.</li>
-<li>مجموعة التحكم: الأشخاص الذين يُطلب منهم الاستمرار في تناول نفس الطعام كما كان من قبل.</li>
-<li>من الضروري أن نعين الأفراد لهذه المجموعات بشكل عشوائي.</li>
-<li>وإلا، فإن الأشخاص الذين يختارون العلاج قد يكونون مختلفين بطريقة ما عن الأشخاص الذين يختارون مجموعة التحكم.</li>
-<li>على سبيل المثال، قد يكونون أكثر عرضة للانخراط في سلوكيات صحية أخرى أيضًا.</li>
-<li>سنقوم بعد ذلك بمتابعة المشاركين بمرور الوقت ونرى كم عدد الأشخاص في كل مجموعة ماتوا.</li>
-<li>لأننا قمنا بتوزيع المشاركين بشكل عشوائي على مجموعات العلاج أو التحكم، يمكننا أن نكون واثقين إلى حد ما من عدم وجود اختلافات أخرى بين المجموعات التي قد تشوش تأثير العلاج.</li>
-<li>ومع ذلك، لا يمكننا أن نكون متأكدين لأن التوزيع العشوائي أحيانًا ينتج مجموعات علاج مقابل مجموعات تحكم تختلف في بعض النواحي الهامة.</li>
-<li>غالبًا ما يحاول الباحثون معالجة هذه التشويشات باستخدام التحليلات الإحصائية، لكن إزالة تأثير التشويش من البيانات يمكن أن يكون صعبًا للغاية.</li>
-<li>عدد من التجارب العشوائية المضبوطة قد فحصت مسألة ما إذا كان تغيير تناول الدهون المشبعة يؤدي إلى صحة أفضل وحياة أطول.</li>
-<li>ركزت هذه التجارب على تقليل تناول الدهون المشبعة بسبب العقيدة القوية بين الباحثين في التغذية بأن الدهون المشبعة قاتلة.</li>
-<li>معظم هؤلاء الباحثين ربما جادلوا بأن جعل الناس يتناولون المزيد من الدهون المشبعة ليس أخلاقيًا!</li>
-<li>ومع ذلك، أظهرت التجارب العشوائية المضبوطة نمطًا متسقًا للغاية: بشكل عام، لا يوجد تأثير ملحوظ على معدلات الوفاة من تقليل تناول الدهون المشبعة.</li>
-</ul>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section></section>
-<section>
-<section id="ما-هي-البيانات" class="title-slide slide level1 center">
-<h1>ما هي البيانات؟</h1>
-<ul>
-<li>البيانات تتكون من متغيرات، حيث يعكس كل متغير قياسًا فريدًا أو كمية محددة.</li>
-</ul>
+<img data-src="CNN.png" class="quarto-figure quarto-figure-center r-stretch" style="width:100.0%"></section>
+<section id="section-13" class="slide level2">
+<h2></h2>
 
-<img data-src="e2a6bc34-283c-424a-8b47-85230c5b6ab9.jpg" style="width:75.0%" class="r-stretch quarto-figure-center"></section>
-<section id="البيانات-النوعية" class="slide level2">
-<h2>البيانات النوعية</h2>
-
-<img data-src="eafcd87e-098a-435c-b74c-79488ecee63c.jpg" style="width:40.0%" class="r-stretch quarto-figure-center"><aside class="notes">
-<p>بعض المتغيرات هي نوعية، مما يعني أنها تصف جودة بدلاً من كمية عددية. على سبيل المثال، في دورتي في الإحصاء، أجري عادة استبيانًا تمهيديًا للطلاب، للحصول على بيانات للاستخدام في الفصل وللتعرف على المزيد عن الطلاب. أحد الأسئلة التي أطرحها هي “ما هو طعامك المفضل؟”، وكانت بعض الإجابات: العنب الأزرق، الشوكولاتة، التمالي، المعكرونة، البيتزا، والمانجو. هذه البيانات ليست عدديّة بشكل أساسي؛ يمكننا تعيين أرقام لكل إجابة (1=العنب الأزرق، 2=الشوكولاتة، إلخ)، ولكن سنستخدم الأرقام كعلامات بدلاً من أرقام حقيقية. هذا يحدد أيضًا ما يجب أن نفعل بهذه الأرقام؛ على سبيل المثال، لن يكون من المنطقي حساب المتوسط لهذه الأرقام.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="البيانات-الكمية" class="slide level2">
-<h2>البيانات الكمية</h2>
-
-<img data-src="8789eec2-be19-4488-9c00-5e37c52783c1.jpg" style="width:60.0%" class="r-stretch quarto-figure-center"></section>
+<img data-src="test9_1.png" class="quarto-figure quarto-figure-center r-stretch" style="width:100.0%"></section>
 <section id="section-14" class="slide level2">
 <h2></h2>
+
+<img data-src="test9_2.png" class="quarto-figure quarto-figure-center r-stretch" style="width:100.0%"></section>
+<section id="section-15" class="slide level2">
+<h2></h2>
+
+<img data-src="test9_3.png" class="quarto-figure quarto-figure-center r-stretch" style="width:100.0%"></section>
+<section id="section-16" class="slide level2">
+<h2></h2>
+
+<img data-src="test9_4.png" class="quarto-figure quarto-figure-center r-stretch" style="width:100.0%"></section>
+<section id="section-17" class="slide level2">
+<h2></h2>
 <table>
-<caption>عدد الاستجابات المختلفة للسؤال لماذا تأخذ هذه الدورة؟</caption>
-<colgroup>
-<col style="width: 75%">
-<col style="width: 25%">
-</colgroup>
 <thead>
 <tr class="header">
-<th>لماذا تأخذ هذه الدورة؟</th>
-<th>عدد الطلاب</th>
+<th style="text-align: left;">Metric</th>
+<th style="text-align: right;">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>لزيادة المعرفة</td>
-<td>200</td>
+<td style="text-align: left;">Loss</td>
+<td style="text-align: right;">0.0352526</td>
 </tr>
 <tr class="even">
-<td>أرغب في اكمال دراستي العليا</td>
-<td>800</td>
-</tr>
-<tr class="odd">
-<td>للحصول على شهادة</td>
-<td>87</td>
+<td style="text-align: left;">Accuracy</td>
+<td style="text-align: right;">0.9902000</td>
 </tr>
 </tbody>
 </table>
-</section>
-<section id="section-15" class="slide level2">
-<h2></h2>
-<h4 id="قياس-البيانات.">قياس البيانات.</h4>
-<h5 id="أنواع-المقاييس">أنواع المقاييس؟</h5>
-<ul>
-<li><p>مباشرة</p></li>
-<li><p>غير مباشرة</p></li>
-</ul>
-<aside class="notes">
-<p>الدليل التشخيصي والإحصائي للاضطرابات النفسية DSM -5</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section></section>
-<section>
-<section id="ما-الذي-يجعل-قياس-البيانات-جيد" class="title-slide slide level1 center">
-<h1>ما الذي يجعل قياس البيانات جيد؟</h1>
-
-</section>
-<section id="section-16" class="slide level2 scrollable">
-<h2></h2>
-<div>
-<ul>
-<li class="fragment">الموثوقية (Reliability):
-<ul>
-<li class="fragment">يشير إلى قدرة القياس على تكرار النتائج بشكل متسق.</li>
-<li class="fragment">يمكن تحقيق الموثوقية من خلال تكرار القياسات ومقارنة النتائج.</li>
-<li class="fragment">القياس الموثوق يعطي نفس النتائج عند تكراره في ظروف مماثلة.</li>
-</ul></li>
-<li class="fragment">الصحة (Validity):
-<ul>
-<li class="fragment">يشير إلى قدرة القياس على قياس ما يفترض أنه يقيسه بدقة.</li>
-<li class="fragment">يجب أن يكون القياس صحيحًا للمفهوم أو البنية التي يهدف إلى قياسها.</li>
-<li class="fragment">يمكن أن يكون هناك قياس غير صحيح إذا كان الأسئلة غير واضحة أو إذا كانت الظروف غير ملائمة.</li>
-</ul></li>
-<li class="fragment">الخطأ (Error):
-<ul>
-<li class="fragment">يعتبر الخطأ جزءًا من أي قياس.</li>
-<li class="fragment">يمكن تقليل الخطأ عن طريق تحسين جودة القياس أو زيادة عدد المرات التي يتم فيها القياس.</li>
-<li class="fragment">القياس الجيد يحقق توازنًا بين دقة القياس والتكلفة والجهد المبذول.</li>
-</ul></li>
-<li class="fragment">المعيار الذهبي (Gold Standard):
-<ul>
-<li class="fragment">يشير إلى القياس الأكثر دقة واعتمادًا.</li>
-<li class="fragment">يستخدم كمعيار لمقارنة القياسات الأخرى.</li>
-<li class="fragment">قد يكون أكثر تكلفة أو صعوبة في التنفيذ.</li>
-</ul></li>
-</ul>
-</div>
-</section></section>
-<section>
-<section id="كيف-نحدد-السؤل-البحثي" class="title-slide slide level1 center">
-<h1>كيف نحدد السؤل البحثي</h1>
-<aside class="notes">
-<p>“التفكير الإحصائي” هو مهارة ضرورية، ليس فقط في العمل ولكن أيضًا في حياتنا الشخصية. نحن نتعرض باستمرار للبيانات من خلال الأخبار ووسائل التواصل الاجتماعي. غالبًا ما تكون الادعاءات المقدمة هنا مبالغ فيها أو محرفة لتناسب رواية معينة. يسمح لنا التفكير الإحصائي بفرز كل هذه الادعاءات المتضاربة واتخاذ قراراتنا بناءً على الأدلة.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section class="slide level2">
-
-<aside class="notes">
-<p>الخطوة الأولى الأكثر أهمية في تنفيذ الإحصاءات هي تحديد سؤال بحث واضح وقابل للإجابة. غالبًا ما لا يتم توثيق أسئلة البحث رسميًا، ولكنها تعد مفتاحًا للتأكد من استخدام البيانات والأساليب المناسبة لتقديم النصائح الأكثر ملاءمة.</p>
-<p>يجب تحديد سؤال البحث بشكل كامل قبل جمع أي بيانات أو اتخاذ أي خطط للتحليل. على الرغم من أن هناك أسئلة بحث لا حصر لها يمكن استخدام الإحصاءات للإجابة عليها، يجب أن تحتوي جميعها على عناصر معينة. هذه العناصر هي السكان المستهدف والنتيجة المرغوبة. إذا كان التحليل يتطلب مقارنة بين مجموعات، يجب أن يتم تحديد ذلك أيضًا في سؤال البحث.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-<p>طريقة للتأكد من أن سؤال البحث قد تم تحديده بشكل صحيح هي استخدام نهج PICO:</p>
-<div>
-<ul>
-<li class="fragment"><p>P (Population ): الفئة السكانية المستهدفة.</p></li>
-<li class="fragment"><p>I (Intervention ): أي تدخل يتم دراسته.</p></li>
-<li class="fragment"><p>C (Control ): المجموعة المقارنة.</p></li>
-<li class="fragment"><p>O (Outcome): النتيجة المرغوبة.</p></li>
-<li class="fragment"><p>في النهاية، يساعدنا التفكير الاحصائي على فهم البيانات بشكل أفضل واتخاذ قرارات مستنيرة. 🌟</p></li>
-</ul>
-</div>
-</section>
-<section id="أمثلة-على-سؤال-البحث" class="slide level2">
-<h2>أمثلة على سؤال البحث</h2>
-<p>نرغب في إجراء دراسة لاستكشاف ما إذا كانت النظام الغذائي النباتي يقلل من مستويات الكوليسترول في الأشخاص البدينين. قبل أن نلقي نظرة على أي بيانات أو نفكر في نوع التحليل الذي سنستخدمه، يجب تحويل هذا إلى سؤال بحث قابل للإجابة.</p>
-<p><strong>PICO</strong></p>
-<div>
-<ol type="1">
-<li class="fragment"><p>Population: هم الأشخاص الذين تزيد أعمارهم عن 18 عامًا ولديهم مؤشر كتلة الجسم أكبر من 30.</p></li>
-<li class="fragment"><p>Intervention: هو النظام الغذائي النباتي.</p></li>
-<li class="fragment"><p>Control: ستكون أي نظام غذائي غير نباتي، أو نظام الغذاء العادي.</p></li>
-<li class="fragment"><p>Outcome: هي التغيير في مستوى الكوليسترول من بداية الدراسة حتى نقطة نهاية معينة. هذا متغير رقمي مستمر يمكن قياسه (إذا كانت الاختبارات اللازمة متاحة) ومقارنته بين المجموعات</p></li>
-</ol>
-</div>
-</section>
-<section id="المشاكل-الشائعة-في-البيانات-او-في-عملية-جمع-البيانات" class="slide level2">
-<h2>المشاكل الشائعة في البيانات او في عملية جمع البيانات</h2>
-<h3 id="التحيزات">التحيزات</h3>
-<div>
-<ul>
-<li class="fragment"><p><strong>الانحياز في الاختيار</strong> يحدث عندما يكون بعض البيانات أكثر احتمالًا أن تُدرج في عينة ما من البيانات من غيرها. أحد المتطلبات الرئيسية للتحليل الإحصائي هو أن تكون العينة عشوائية وممثلة للسكان المستهدفين في سؤال البحث. إذا لم يكن الأمر كذلك، قد لا نتمكن من استخلاص استنتاجات حول السكان المستهدفين ولن نكون قادرين على الإجابة على السؤال البحثي</p></li>
-<li class="fragment"><p><strong>الانحياز الذاكري</strong> يحدث عندما يُطلب من المشاركين أن يتذكروا أحداثًا أو تجاربًا سابقة كجزء من الدراسة. قد تختلف دقة واكتمال هذه التذكرات بين المشاركين، مما قد يؤدي إلى انحياز في البيانات</p></li>
-</ul>
-</div>
-</section>
-<section id="section-17" class="slide level2">
-<h2></h2>
-<div>
-<ul>
-<li class="fragment"><strong>الانحياز التأكيدي</strong> هو الاتجاه لتحليل أو تفسير البيانات بطريقة تدعم الأفكار المسبقة. للأسف، الانحياز التأكيدي جزء من طبيعة الإنسان وقد يكون من الصعب اكتشافه. إنه أيضًا أحد الأسباب التي تجعل التفكير الإحصائي، بدلاً من الاعتماد فقط على غريزتنا، أمرًا مهمًا جدًا. أفضل طريقة لمواجهة الانحياز التأكيدي هي الاعتراف بأي أفكار مسبقة أو توقعات للنتائج قبل النظر في البيانات والبقاء على علم بهذه الأمور طوال العملية.</li>
-</ul>
-</div>
 </section>
 <section id="section-18" class="slide level2">
 <h2></h2>
-<h3 id="البيانات-المفقودة">البيانات المفقودة</h3>
-<p>الملاحظات التي كان من المفترض جمعها ولكن لم يتم ذلك.</p>
-<div>
-<ol type="1">
-<li class="fragment">مشكلة البيانات الناقصة في النظام الإداري:</li>
-</ol>
-<ul>
-<li class="fragment">قُدِّم لممارسي الإشراف الجنائي طلب بتسجيل التفاصيل في نظام إداري لأغراض التحليل. ولكن ممارسي الإشراف في منطقة معينة كانوا مشغولين جدًا بسبب حمولة كبيرة من القضايا، ولم يقموا بجمع جميع المعلومات لأنها لم تكن ذات صلة بعملهم. وهذا يعني أن البيانات المُضافة إلى النظام غير مكتملة.</li>
-</ul>
-<ol start="2" type="1">
-<li class="fragment">انحياز التذكر في استبانة الأسر:</li>
-</ol>
-<ul>
-<li class="fragment">تم إرسال استبانة إلى الأسر في سلطة محلية، تطلب معلومات حول دخل الأسرة وتاريخ التوظيف. بعض الأسر تعتبر هذه الأسئلة شخصية جدًا ولم تقم بملء المعلومات.</li>
-</ul>
-</div>
-</section>
+
+<img data-src="test9_6.png" class="quarto-figure quarto-figure-center r-stretch" style="width:100.0%"></section>
 <section id="section-19" class="slide level2">
 <h2></h2>
-<div>
-<ol start="3" type="1">
-<li class="fragment">البيانات الناقصة في تحليل التجربة السريرية:</li>
-</ol>
-<ul>
-<li class="fragment">تتضمن التجربة السريرية أخذ عينات دم من المشاركين للتحليل. ولكن بعض العينات تسقط أثناء النقل إلى المختبر، ونتائجها لا يمكن استخدامها. وبالتالي، يحتوي مجموع البيانات المحللة على مساحات فارغة حيث يجب أن تكون هذه النتائج.</li>
-</ul>
-</div>
-</section></section>
+
+<img data-src="test9_5.png" class="quarto-figure quarto-figure-center r-stretch" style="width:100.0%"></section></section>
 <section>
-<section id="تلخيص-البيانات" class="title-slide slide level1 center">
-<h1>تلخيص البيانات</h1>
+<section id="التنبؤ-بنوع-الورم" class="title-slide slide level1 center">
+<h1>التنبؤ بنوع الورم</h1>
 
-<img data-src="DALL·E%202024-03-28%2017.00.23%20-%20Create%20an%20image%20depicting%20a%20before-and-after%20scene%20for%20statistical%20analysis.%20On%20one%20side%20of%20the%20image,%20illustrate%20a%20chaotic,%20unorganized%20pile%20of%20numbe.png" style="width:40.0%" class="r-stretch quarto-figure-center"><aside class="notes">
-<p>عندما نلخص البيانات، نقوم بضرورة التخلص من المعلومات، ويمكن للشخص أن يعترض على ذلك. كنموذج، دعونا نعود إلى دراسة PURE التي ناقشناها في الفصل 1. أليس من المفترض أن نعتقد أن جميع التفاصيل حول كل فرد تهم، بعد تلخيصها في مجموعة البيانات؟ ماذا عن التفاصيل المحددة حول كيفية جمع البيانات، مثل وقت اليوم أو مزاج المشارك؟ يتم فقدان كل هذه التفاصيل عندما نلخص البيانات.</p>
-<p>أحد الأسباب التي تجعلنا نلخص البيانات هو أنها توفر لنا وسيلة للتعميم - أي أننا نستطيع القول بشكل عام يتجاوز الملاحظات المحددة. أبرز أهمية التعميم في قصة الكاتب خورخي لويس بورخيس “فيونيس المتذكر”، حيث يصف شخصًا فقد القدرة على النسيان. يركز بورخيس على العلاقة بين التعميم (أي التخلص من البيانات) والتفكير: “التفكير هو نسيان الفرق، هو التعميم، هو التجريد. في عالم فيونيس المكتظ بالتفاصيل، لا يوجد سوى تفاصيل.”</p>
-<p>درس علماء النفس طويلاً جميع الطرق التي يكون فيها التعميم مركزيًا للتفكير. مثال على ذلك هو التصنيف: نستطيع التعرف بسهولة على أمثلة مختلفة من فئة “الطيور” على الرغم من أن الأمثلة الفردية قد تكون مختلفة جدًا في ملامحها الظاهرية (مثل النعامة والطائر الأحمر والدجاج). من المهم أن التعميم يتيح لنا إجراء توقعات حول هؤلاء الأفراد - في حالة الطيور، يمكننا التنبؤ بأنها قادرة على الطيران وتناول البذور، وأنها على الأرجح لا يمكنها قيادة سيارة أو التحدث بالإنجليزية. قد لا تكون هذه التوقعات دائمًا صحيحة، ولكنها غالبًا ما تكون كافية لتكون مفيدة في العالم.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
+<img data-src="c148bb1f-6faa-430e-b51a-1d923b78a8d6.jpg" class="quarto-figure quarto-figure-center r-stretch" style="width:100.0%"></section>
+<section id="breast-cancer-wisconsin-dataset" class="slide level2">
+<h2>Breast Cancer Wisconsin dataset</h2>
+<p><img data-src="Screenshot%202024-10-17%20142428.png" class="quarto-figure quarto-figure-center" style="width:100.0%"> <img data-src="test10_1.png" class="quarto-figure quarto-figure-center" style="width:50.0%"></p>
 </section>
-<section id="section-20" class="slide level2 scrollable">
+<section id="section-20" class="slide level2">
 <h2></h2>
-<div>
-<ol type="1">
-<li class="fragment"><strong>الوضوح</strong>: يجعل تلخيص البيانات من السهل فهمها. بدلاً من التعامل مع الأرقام الخام، تركز على القيم الملخصة الرئيسية.</li>
-</ol>
-<ul>
-<li class="fragment"><img data-src="clear1.png" style="width:30.0%" data-fig-align="center"></li>
-</ul>
-<ol start="2" type="1">
-<li class="fragment"><strong>التماثل</strong>: يشمل التلخيص قياسات التماثل (مثل المتوسط، والوسيط، والمنوال)، والتي تكشف عن النقطة المركزية في مجموعة البيانات.</li>
-</ol>
-<ul>
-<li class="fragment"><img data-src="Centrality.png" style="width:30.0%" data-fig-align="center"></li>
-</ul>
-<ol start="3" type="1">
-<li class="fragment"><strong>التشتت</strong>: يظهر التلخيص كيفية انتشار البيانات حول المتوسط.</li>
-</ol>
-<ul>
-<li class="fragment"><img data-src="Dispersion.png" style="width:30.0%" data-fig-align="center"></li>
-</ul>
-<ol start="4" type="1">
-<li class="fragment"><strong>التكرار</strong>: يشمل تلخيص البيانات الإشارة إلى حجم العينة (عدد القيم).</li>
-</ol>
-<ul>
-<li class="fragment"><img data-src="Replication1.jpg" style="width:30.0%" data-fig-align="center"></li>
-</ul>
-<ol start="5" type="1">
-<li class="fragment"><strong>التعميم</strong>: من خلال التلخيص، يمكننا إصدار بيانات عامة تتجاوز الملاحظات الفردية، مما يساعدنا في تحديد الاتجاهات والأنماط.</li>
-</ol>
-<ul>
-<li class="fragment"><img data-src="generalizing.png" style="width:30.0%" data-fig-align="center"></li>
-</ul>
-<p>في علم البيانات، يوفر التلخيص الفعّال الوقت ويمكّن اتخاذ قرارات أكثر ذكاءً من خلال استخراج رؤى معنوية من مجموعات البيانات الكبيرة</p>
-</div>
-</section>
-<section id="المسح-الوطني-للصحة-والتغذية-nhanes" class="slide level2">
-<h2>المسح الوطني للصحة والتغذية (NHANES)</h2>
 
-<img data-src="cdc.png" style="width:70.0%" class="r-stretch quarto-figure-center"></section>
+<img data-src="test10_2.png" class="quarto-figure quarto-figure-center r-stretch" style="width:50.0%"></section>
 <section id="section-21" class="slide level2">
 <h2></h2>
-<div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code>     ID SurveyYr Gender Age AgeDecade AgeMonths Race1 Race3    Education
-1 51624  2009_10   male  34     30-39       409 White  &lt;NA&gt;  High School
-2 51624  2009_10   male  34     30-39       409 White  &lt;NA&gt;  High School
-3 51624  2009_10   male  34     30-39       409 White  &lt;NA&gt;  High School
-4 51625  2009_10   male   4       0-9        49 Other  &lt;NA&gt;         &lt;NA&gt;
-5 51630  2009_10 female  49     40-49       596 White  &lt;NA&gt; Some College
-6 51638  2009_10   male   9       0-9       115 White  &lt;NA&gt;         &lt;NA&gt;
-  MaritalStatus    HHIncome HHIncomeMid Poverty HomeRooms HomeOwn       Work
-1       Married 25000-34999       30000    1.36         6     Own NotWorking
-2       Married 25000-34999       30000    1.36         6     Own NotWorking
-3       Married 25000-34999       30000    1.36         6     Own NotWorking
-4          &lt;NA&gt; 20000-24999       22500    1.07         9     Own       &lt;NA&gt;
-5   LivePartner 35000-44999       40000    1.91         5    Rent NotWorking
-6          &lt;NA&gt; 75000-99999       87500    1.84         6    Rent       &lt;NA&gt;
-  Weight Length HeadCirc Height   BMI BMICatUnder20yrs   BMI_WHO Pulse BPSysAve
-1   87.4     NA       NA  164.7 32.22             &lt;NA&gt; 30.0_plus    70      113
-2   87.4     NA       NA  164.7 32.22             &lt;NA&gt; 30.0_plus    70      113
-3   87.4     NA       NA  164.7 32.22             &lt;NA&gt; 30.0_plus    70      113
-4   17.0     NA       NA  105.4 15.30             &lt;NA&gt; 12.0_18.5    NA       NA
-5   86.7     NA       NA  168.4 30.57             &lt;NA&gt; 30.0_plus    86      112
-6   29.8     NA       NA  133.1 16.82             &lt;NA&gt; 12.0_18.5    82       86
-  BPDiaAve BPSys1 BPDia1 BPSys2 BPDia2 BPSys3 BPDia3 Testosterone DirectChol
-1       85    114     88    114     88    112     82           NA       1.29
-2       85    114     88    114     88    112     82           NA       1.29
-3       85    114     88    114     88    112     82           NA       1.29
-4       NA     NA     NA     NA     NA     NA     NA           NA         NA
-5       75    118     82    108     74    116     76           NA       1.16
-6       47     84     50     84     50     88     44           NA       1.34
-  TotChol UrineVol1 UrineFlow1 UrineVol2 UrineFlow2 Diabetes DiabetesAge
-1    3.49       352         NA        NA         NA       No          NA
-2    3.49       352         NA        NA         NA       No          NA
-3    3.49       352         NA        NA         NA       No          NA
-4      NA        NA         NA        NA         NA       No          NA
-5    6.70        77      0.094        NA         NA       No          NA
-6    4.86       123      1.538        NA         NA       No          NA
-  HealthGen DaysPhysHlthBad DaysMentHlthBad LittleInterest Depressed
-1      Good               0              15           Most   Several
-2      Good               0              15           Most   Several
-3      Good               0              15           Most   Several
-4      &lt;NA&gt;              NA              NA           &lt;NA&gt;      &lt;NA&gt;
-5      Good               0              10        Several   Several
-6      &lt;NA&gt;              NA              NA           &lt;NA&gt;      &lt;NA&gt;
-  nPregnancies nBabies Age1stBaby SleepHrsNight SleepTrouble PhysActive
-1           NA      NA         NA             4          Yes         No
-2           NA      NA         NA             4          Yes         No
-3           NA      NA         NA             4          Yes         No
-4           NA      NA         NA            NA         &lt;NA&gt;       &lt;NA&gt;
-5            2       2         27             8          Yes         No
-6           NA      NA         NA            NA         &lt;NA&gt;       &lt;NA&gt;
-  PhysActiveDays TVHrsDay CompHrsDay TVHrsDayChild CompHrsDayChild
-1             NA     &lt;NA&gt;       &lt;NA&gt;            NA              NA
-2             NA     &lt;NA&gt;       &lt;NA&gt;            NA              NA
-3             NA     &lt;NA&gt;       &lt;NA&gt;            NA              NA
-4             NA     &lt;NA&gt;       &lt;NA&gt;             4               1
-5             NA     &lt;NA&gt;       &lt;NA&gt;            NA              NA
-6             NA     &lt;NA&gt;       &lt;NA&gt;             5               0
-  Alcohol12PlusYr AlcoholDay AlcoholYear SmokeNow Smoke100 Smoke100n SmokeAge
-1             Yes         NA           0       No      Yes    Smoker       18
-2             Yes         NA           0       No      Yes    Smoker       18
-3             Yes         NA           0       No      Yes    Smoker       18
-4            &lt;NA&gt;         NA          NA     &lt;NA&gt;     &lt;NA&gt;      &lt;NA&gt;       NA
-5             Yes          2          20      Yes      Yes    Smoker       38
-6            &lt;NA&gt;         NA          NA     &lt;NA&gt;     &lt;NA&gt;      &lt;NA&gt;       NA
-  Marijuana AgeFirstMarij RegularMarij AgeRegMarij HardDrugs SexEver SexAge
-1       Yes            17           No          NA       Yes     Yes     16
-2       Yes            17           No          NA       Yes     Yes     16
-3       Yes            17           No          NA       Yes     Yes     16
-4      &lt;NA&gt;            NA         &lt;NA&gt;          NA      &lt;NA&gt;    &lt;NA&gt;     NA
-5       Yes            18           No          NA       Yes     Yes     12
-6      &lt;NA&gt;            NA         &lt;NA&gt;          NA      &lt;NA&gt;    &lt;NA&gt;     NA
-  SexNumPartnLife SexNumPartYear SameSex SexOrientation PregnantNow
-1               8              1      No   Heterosexual        &lt;NA&gt;
-2               8              1      No   Heterosexual        &lt;NA&gt;
-3               8              1      No   Heterosexual        &lt;NA&gt;
-4              NA             NA    &lt;NA&gt;           &lt;NA&gt;        &lt;NA&gt;
-5              10              1     Yes   Heterosexual        &lt;NA&gt;
-6              NA             NA    &lt;NA&gt;           &lt;NA&gt;        &lt;NA&gt;</code></pre>
-</div>
-</div>
-<div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 10000    76</code></pre>
-</div>
-</div>
-</section>
-<section id="section-22" class="slide level2">
-<h2></h2>
-<div class="cell">
-<div class="cell-output cell-output-stdout">
-<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource hscroll number-lines code-with-copy"><code class="sourceCode"><span id="cb6-1"><a href="#cb6-1"></a>     ID SurveyYr Gender Age AgeDecade AgeMonths Race1 Race3    Education</span>
-<span id="cb6-2"><a href="#cb6-2"></a>1 51624  2009_10   male  34     30-39       409 White  &lt;NA&gt;  High School</span>
-<span id="cb6-3"><a href="#cb6-3"></a>2 51624  2009_10   male  34     30-39       409 White  &lt;NA&gt;  High School</span>
-<span id="cb6-4"><a href="#cb6-4"></a>3 51624  2009_10   male  34     30-39       409 White  &lt;NA&gt;  High School</span>
-<span id="cb6-5"><a href="#cb6-5"></a>4 51625  2009_10   male   4       0-9        49 Other  &lt;NA&gt;         &lt;NA&gt;</span>
-<span id="cb6-6"><a href="#cb6-6"></a>5 51630  2009_10 female  49     40-49       596 White  &lt;NA&gt; Some College</span>
-<span id="cb6-7"><a href="#cb6-7"></a>6 51638  2009_10   male   9       0-9       115 White  &lt;NA&gt;         &lt;NA&gt;</span>
-<span id="cb6-8"><a href="#cb6-8"></a>  MaritalStatus    HHIncome HHIncomeMid Poverty HomeRooms HomeOwn       Work</span>
-<span id="cb6-9"><a href="#cb6-9"></a>1       Married 25000-34999       30000    1.36         6     Own NotWorking</span>
-<span id="cb6-10"><a href="#cb6-10"></a>2       Married 25000-34999       30000    1.36         6     Own NotWorking</span>
-<span id="cb6-11"><a href="#cb6-11"></a>3       Married 25000-34999       30000    1.36         6     Own NotWorking</span>
-<span id="cb6-12"><a href="#cb6-12"></a>4          &lt;NA&gt; 20000-24999       22500    1.07         9     Own       &lt;NA&gt;</span>
-<span id="cb6-13"><a href="#cb6-13"></a>5   LivePartner 35000-44999       40000    1.91         5    Rent NotWorking</span>
-<span id="cb6-14"><a href="#cb6-14"></a>6          &lt;NA&gt; 75000-99999       87500    1.84         6    Rent       &lt;NA&gt;</span>
-<span id="cb6-15"><a href="#cb6-15"></a>  Weight Length HeadCirc Height   BMI BMICatUnder20yrs   BMI_WHO Pulse BPSysAve</span>
-<span id="cb6-16"><a href="#cb6-16"></a>1   87.4     NA       NA  164.7 32.22             &lt;NA&gt; 30.0_plus    70      113</span>
-<span id="cb6-17"><a href="#cb6-17"></a>2   87.4     NA       NA  164.7 32.22             &lt;NA&gt; 30.0_plus    70      113</span>
-<span id="cb6-18"><a href="#cb6-18"></a>3   87.4     NA       NA  164.7 32.22             &lt;NA&gt; 30.0_plus    70      113</span>
-<span id="cb6-19"><a href="#cb6-19"></a>4   17.0     NA       NA  105.4 15.30             &lt;NA&gt; 12.0_18.5    NA       NA</span>
-<span id="cb6-20"><a href="#cb6-20"></a>5   86.7     NA       NA  168.4 30.57             &lt;NA&gt; 30.0_plus    86      112</span>
-<span id="cb6-21"><a href="#cb6-21"></a>6   29.8     NA       NA  133.1 16.82             &lt;NA&gt; 12.0_18.5    82       86</span>
-<span id="cb6-22"><a href="#cb6-22"></a>  BPDiaAve BPSys1 BPDia1 BPSys2 BPDia2 BPSys3 BPDia3 Testosterone DirectChol</span>
-<span id="cb6-23"><a href="#cb6-23"></a>1       85    114     88    114     88    112     82           NA       1.29</span>
-<span id="cb6-24"><a href="#cb6-24"></a>2       85    114     88    114     88    112     82           NA       1.29</span>
-<span id="cb6-25"><a href="#cb6-25"></a>3       85    114     88    114     88    112     82           NA       1.29</span>
-<span id="cb6-26"><a href="#cb6-26"></a>4       NA     NA     NA     NA     NA     NA     NA           NA         NA</span>
-<span id="cb6-27"><a href="#cb6-27"></a>5       75    118     82    108     74    116     76           NA       1.16</span>
-<span id="cb6-28"><a href="#cb6-28"></a>6       47     84     50     84     50     88     44           NA       1.34</span>
-<span id="cb6-29"><a href="#cb6-29"></a>  TotChol UrineVol1 UrineFlow1 UrineVol2 UrineFlow2 Diabetes DiabetesAge</span>
-<span id="cb6-30"><a href="#cb6-30"></a>1    3.49       352         NA        NA         NA       No          NA</span>
-<span id="cb6-31"><a href="#cb6-31"></a>2    3.49       352         NA        NA         NA       No          NA</span>
-<span id="cb6-32"><a href="#cb6-32"></a>3    3.49       352         NA        NA         NA       No          NA</span>
-<span id="cb6-33"><a href="#cb6-33"></a>4      NA        NA         NA        NA         NA       No          NA</span>
-<span id="cb6-34"><a href="#cb6-34"></a>5    6.70        77      0.094        NA         NA       No          NA</span>
-<span id="cb6-35"><a href="#cb6-35"></a>6    4.86       123      1.538        NA         NA       No          NA</span>
-<span id="cb6-36"><a href="#cb6-36"></a>  HealthGen DaysPhysHlthBad DaysMentHlthBad LittleInterest Depressed</span>
-<span id="cb6-37"><a href="#cb6-37"></a>1      Good               0              15           Most   Several</span>
-<span id="cb6-38"><a href="#cb6-38"></a>2      Good               0              15           Most   Several</span>
-<span id="cb6-39"><a href="#cb6-39"></a>3      Good               0              15           Most   Several</span>
-<span id="cb6-40"><a href="#cb6-40"></a>4      &lt;NA&gt;              NA              NA           &lt;NA&gt;      &lt;NA&gt;</span>
-<span id="cb6-41"><a href="#cb6-41"></a>5      Good               0              10        Several   Several</span>
-<span id="cb6-42"><a href="#cb6-42"></a>6      &lt;NA&gt;              NA              NA           &lt;NA&gt;      &lt;NA&gt;</span>
-<span id="cb6-43"><a href="#cb6-43"></a>  nPregnancies nBabies Age1stBaby SleepHrsNight SleepTrouble PhysActive</span>
-<span id="cb6-44"><a href="#cb6-44"></a>1           NA      NA         NA             4          Yes         No</span>
-<span id="cb6-45"><a href="#cb6-45"></a>2           NA      NA         NA             4          Yes         No</span>
-<span id="cb6-46"><a href="#cb6-46"></a>3           NA      NA         NA             4          Yes         No</span>
-<span id="cb6-47"><a href="#cb6-47"></a>4           NA      NA         NA            NA         &lt;NA&gt;       &lt;NA&gt;</span>
-<span id="cb6-48"><a href="#cb6-48"></a>5            2       2         27             8          Yes         No</span>
-<span id="cb6-49"><a href="#cb6-49"></a>6           NA      NA         NA            NA         &lt;NA&gt;       &lt;NA&gt;</span>
-<span id="cb6-50"><a href="#cb6-50"></a>  PhysActiveDays TVHrsDay CompHrsDay TVHrsDayChild CompHrsDayChild</span>
-<span id="cb6-51"><a href="#cb6-51"></a>1             NA     &lt;NA&gt;       &lt;NA&gt;            NA              NA</span>
-<span id="cb6-52"><a href="#cb6-52"></a>2             NA     &lt;NA&gt;       &lt;NA&gt;            NA              NA</span>
-<span id="cb6-53"><a href="#cb6-53"></a>3             NA     &lt;NA&gt;       &lt;NA&gt;            NA              NA</span>
-<span id="cb6-54"><a href="#cb6-54"></a>4             NA     &lt;NA&gt;       &lt;NA&gt;             4               1</span>
-<span id="cb6-55"><a href="#cb6-55"></a>5             NA     &lt;NA&gt;       &lt;NA&gt;            NA              NA</span>
-<span id="cb6-56"><a href="#cb6-56"></a>6             NA     &lt;NA&gt;       &lt;NA&gt;             5               0</span>
-<span id="cb6-57"><a href="#cb6-57"></a>  Alcohol12PlusYr AlcoholDay AlcoholYear SmokeNow Smoke100 Smoke100n SmokeAge</span>
-<span id="cb6-58"><a href="#cb6-58"></a>1             Yes         NA           0       No      Yes    Smoker       18</span>
-<span id="cb6-59"><a href="#cb6-59"></a>2             Yes         NA           0       No      Yes    Smoker       18</span>
-<span id="cb6-60"><a href="#cb6-60"></a>3             Yes         NA           0       No      Yes    Smoker       18</span>
-<span id="cb6-61"><a href="#cb6-61"></a>4            &lt;NA&gt;         NA          NA     &lt;NA&gt;     &lt;NA&gt;      &lt;NA&gt;       NA</span>
-<span id="cb6-62"><a href="#cb6-62"></a>5             Yes          2          20      Yes      Yes    Smoker       38</span>
-<span id="cb6-63"><a href="#cb6-63"></a>6            &lt;NA&gt;         NA          NA     &lt;NA&gt;     &lt;NA&gt;      &lt;NA&gt;       NA</span>
-<span id="cb6-64"><a href="#cb6-64"></a>  Marijuana AgeFirstMarij RegularMarij AgeRegMarij HardDrugs SexEver SexAge</span>
-<span id="cb6-65"><a href="#cb6-65"></a>1       Yes            17           No          NA       Yes     Yes     16</span>
-<span id="cb6-66"><a href="#cb6-66"></a>2       Yes            17           No          NA       Yes     Yes     16</span>
-<span id="cb6-67"><a href="#cb6-67"></a>3       Yes            17           No          NA       Yes     Yes     16</span>
-<span id="cb6-68"><a href="#cb6-68"></a>4      &lt;NA&gt;            NA         &lt;NA&gt;          NA      &lt;NA&gt;    &lt;NA&gt;     NA</span>
-<span id="cb6-69"><a href="#cb6-69"></a>5       Yes            18           No          NA       Yes     Yes     12</span>
-<span id="cb6-70"><a href="#cb6-70"></a>6      &lt;NA&gt;            NA         &lt;NA&gt;          NA      &lt;NA&gt;    &lt;NA&gt;     NA</span>
-<span id="cb6-71"><a href="#cb6-71"></a>  SexNumPartnLife SexNumPartYear SameSex SexOrientation PregnantNow</span>
-<span id="cb6-72"><a href="#cb6-72"></a>1               8              1      No   Heterosexual        &lt;NA&gt;</span>
-<span id="cb6-73"><a href="#cb6-73"></a>2               8              1      No   Heterosexual        &lt;NA&gt;</span>
-<span id="cb6-74"><a href="#cb6-74"></a>3               8              1      No   Heterosexual        &lt;NA&gt;</span>
-<span id="cb6-75"><a href="#cb6-75"></a>4              NA             NA    &lt;NA&gt;           &lt;NA&gt;        &lt;NA&gt;</span>
-<span id="cb6-76"><a href="#cb6-76"></a>5              10              1     Yes   Heterosexual        &lt;NA&gt;</span>
-<span id="cb6-77"><a href="#cb6-77"></a>6              NA             NA    &lt;NA&gt;           &lt;NA&gt;        &lt;NA&gt;</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</div>
-<div class="cell">
-<style type="text/css">
-.hscroll {
-  overflow-x: auto;
-  white-space: scroll;
-}
-</style>
-</div>
-</section>
-<section id="section-23" class="slide level2">
-<h2></h2>
-<div class="cell">
-<div class="cell-output-display">
-<table class="lightable-classic" data-quarto-postprocess="true" style="font-family: Cambria; width: auto !important; margin-left: auto; margin-right: auto;">
-<caption>تلخيص بجدول</caption>
+
+<img data-src="test10_3.png" class="quarto-figure quarto-figure-center r-stretch" style="width:50.0%"></section>
+<section id="logistic-regression-1" class="slide level2">
+<h2>Logistic Regression</h2>
+<table>
 <thead>
 <tr class="header">
-<th style="text-align: left;" data-quarto-table-cell-role="th">Var1</th>
-<th style="text-align: right;" data-quarto-table-cell-role="th">Freq</th>
+<th style="text-align: left;">Metric</th>
+<th style="text-align: right;">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">female</td>
-<td style="text-align: right;">5020</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">male</td>
-<td style="text-align: right;">4980</td>
+<td style="text-align: left;">Accuracy</td>
+<td style="text-align: right;">0.9265</td>
 </tr>
 </tbody>
 </table>
+</section>
+<section id="section-22" class="slide level2">
+<h2></h2>
 
+<img data-src="test10_4.png" class="quarto-figure quarto-figure-center r-stretch" style="width:100.0%"></section>
+<section id="support-vector-machine-svm" class="slide level2">
+<h2>Support Vector Machine (SVM)</h2>
 
-</div>
-</div>
+<img data-src="SVM_margin.png" class="quarto-figure quarto-figure-center r-stretch" style="width:100.0%"></section>
+<section id="section-23" class="slide level2">
+<h2></h2>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Metric</th>
+<th style="text-align: right;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Accuracy</td>
+<td style="text-align: right;">0.9657</td>
+</tr>
+</tbody>
+</table>
 </section>
 <section id="section-24" class="slide level2">
 <h2></h2>
 
-<img data-src="index_files/figure-revealjs/unnamed-chunk-10-1.png" width="960" class="r-stretch"></section>
+<img data-src="test10_5.png" class="quarto-figure quarto-figure-center r-stretch" style="width:100.0%"></section>
 <section id="section-25" class="slide level2">
 <h2></h2>
-
-<img data-src="Hist1.png" style="width:20.0%" class="r-stretch"></section>
+<div class="cell">
+<div class="cell-output-display">
+<div class="plotly html-widget html-fill-item" id="htmlwidget-bc76af881a3ee17926a8" style="width:960px;height:480px;"></div>
+<script type="application/json" data-for="htmlwidget-bc76af881a3ee17926a8">{"x":{"visdat":{"6d60246d13ca":["function () ","plotlyVisDat"],"6d6078e97855":["function () ","data"]},"cur_data":"6d6078e97855","attrs":{"6d6078e97855":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":{},"y":{},"z":{},"type":"scatter3d","mode":"markers","color":{},"colors":["#66c2a5","#fc8d62"],"marker":{"size":5,"opacity":0.80000000000000004},"inherit":true},"6d6078e97855.1":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"z":[[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],[1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],[1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],[1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],[1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],[1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],[1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],[1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],[1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],[1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],[1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],[1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],[1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],[1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],[1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],[1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],[1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],[1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],[1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2]],"type":"surface","x":[1,1.1836734693877551,1.3673469387755102,1.5510204081632653,1.7346938775510203,1.9183673469387754,2.1020408163265305,2.2857142857142856,2.4693877551020407,2.6530612244897958,2.8367346938775508,3.0204081632653064,3.2040816326530615,3.3877551020408165,3.5714285714285716,3.7551020408163267,3.9387755102040818,4.1224489795918373,4.3061224489795915,4.4897959183673475,4.6734693877551017,4.8571428571428577,5.0408163265306127,5.2244897959183678,5.4081632653061229,5.591836734693878,5.7755102040816331,5.9591836734693882,6.1428571428571432,6.3265306122448983,6.5102040816326534,6.6938775510204085,6.8775510204081636,7.0612244897959187,7.2448979591836737,7.4285714285714288,7.6122448979591839,7.795918367346939,7.9795918367346941,8.1632653061224492,8.3469387755102034,8.5306122448979593,8.7142857142857153,8.8979591836734695,9.0816326530612255,9.2653061224489797,9.4489795918367356,9.6326530612244898,9.8163265306122458,10],"y":[1,1.1836734693877551,1.3673469387755102,1.5510204081632653,1.7346938775510203,1.9183673469387754,2.1020408163265305,2.2857142857142856,2.4693877551020407,2.6530612244897958,2.8367346938775508,3.0204081632653064,3.2040816326530615,3.3877551020408165,3.5714285714285716,3.7551020408163267,3.9387755102040818,4.1224489795918373,4.3061224489795915,4.4897959183673475,4.6734693877551017,4.8571428571428577,5.0408163265306127,5.2244897959183678,5.4081632653061229,5.591836734693878,5.7755102040816331,5.9591836734693882,6.1428571428571432,6.3265306122448983,6.5102040816326534,6.6938775510204085,6.8775510204081636,7.0612244897959187,7.2448979591836737,7.4285714285714288,7.6122448979591839,7.795918367346939,7.9795918367346941,8.1632653061224492,8.3469387755102034,8.5306122448979593,8.7142857142857153,8.8979591836734695,9.0816326530612255,9.2653061224489797,9.4489795918367356,9.6326530612244898,9.8163265306122458,10],"surfacecolor":[[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]],"colorscale":[[0,1],["lightblue","lightpink"]],"opacity":0.5,"inherit":true}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"scene":{"xaxis":{"title":"Clump Thickness"},"yaxis":{"title":"Cell Size"},"zaxis":{"title":"Cell Shape"},"bgcolor":"rgba(0,0,0,0)"},"title":"SVM Decision Boundary for Breast Cancer Dataset","hovermode":"closest","showlegend":true,"legend":{"yanchor":"top","y":0.5}},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"x":[5,5,3,6,4,1,2,2,4,1,2,1,4,4,6,3,1,3,5,2,1,3,2,2,3,2,6,1,1,4,1,1,4,1,5,1,1,1,5,3,2,2,4,5,3,4,2,1,3,4,1,2,1,2,5,4,1,1,3,1,8,1,3,1,4,1,3,1,5,2,3,3,5,4,3,4,3,2,1,2,1,3,1,4,1,1,2,4,3,1,4,3,1,3,1,1,2,4,1,1,6,2,1,5,1,3,4,8,5,1,3,1,5,1,1,1,5,1,1,1,6,1,1,1,8,3,5,3,2,1,1,5,4,1,6,3,3,3,5,5,1,5,3,3,1,1,3,2,3,1,1,5,8,1,1,1,1,3,2,1,1,1,1,4,3,1,3,1,5,5,1,1,1,1,2,1,1,5,1,5,2,3,1,4,3,4,2,2,1,1,4,1,4,5,3,1,1,1,3,5,1,3,2,2,3,5,2,5,1,3,1,1,3,3,4,3,1,3,5,3,1,1,4,1,2,3,1,5,3,1,5,2,3,4,5,3,5,1,2,1,5,5,3,6,4,4,5,5,1,1,5,2,1,5,1,4,5,3,2,5,5,5,3,6,4,4,4,1,3,6,6,4,5,3,4,4,5,5,5,5,1,3,1,4,5,3,1,4,4,4,6,4,4,4,1,3,1,5,2,1,5,5,3,1,1,3,1,4,3,3,4,4,6,4,4,1,3,2,1,5,5,4,6,5,3,5,4,2,5,2,3,3,1,3,4,3,4,5,5,2,5,5,5,1,3,4,3,4,3,1,5,5,1,1,1,5,3,5,1,5,5,5,5,4,5,3,5,3,1,4,4,1,5,2,2,4,3,4,5,3,6,7,1,5,3,2,2,4,6,5,1,3,3,4,4,5,4,3,3,1,2,3,1,1,3,3,1,5,4,3,3,5,5,1,1,4,1,1,3,1,5,3,3,2,5,1,4,1,5,1,2,5,1,1,1,1,3,4,1,1,3,3,3,2],"y":[1,4,1,8,1,1,1,1,2,1,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,3,1,1,3,1,1,2,1,2,1,1,1,1,1,1,1,1,1,1,1,1,1,3,3,1,3,1,2,1,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,1,1,4,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,4,3,1,1,1,1,1,1,1,2,3,1,1,1,7,1,1,1,1,1,1,1,1,1,1,1,1,3,2,1,1,1,1,1,1,1,1,1,1,4,1,1,2,1,1,2,1,1,1,1,1,1,1,2,1,1,1,4,1,1,2,4,1,1,1,1,3,1,1,1,1,1,1,1,1,3,1,2,1,1,3,3,1,1,1,1,1,2,1,1,1,2,2,1,3,1,2,1,2,1,3,1,1,1,3,1,2,3,2,3,1,1,3,1,1,3,1,1,2,9,1,1,1,2,1,1,1,1,1,1,1,1,1,1,3,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,3,1,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,3,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,1,1,3,1,1,1,1,1,1,1,2,4,1,3,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,1,1,1,1,3,1,1,1,1,1,1,3,1,1,1,1,1,1,1,2,1,1,1,1,2,1,1,1,1,1,1,1,1,2,1,1,1,2,1,1,1,1,1,4,1,1,1,1,1,1,1,2,1,2,1,3,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],"z":[1,4,1,8,1,1,2,1,1,1,1,1,1,1,1,1,1,1,1,1,3,1,1,1,2,1,1,1,1,1,1,1,1,1,3,3,2,4,1,1,1,2,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,2,1,3,1,1,2,1,1,1,1,3,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,3,1,1,1,1,4,1,1,1,1,1,1,1,1,1,1,1,1,3,1,1,1,6,2,3,1,1,1,1,1,1,2,3,1,1,1,7,4,1,1,1,1,1,1,1,1,1,1,1,4,1,1,1,1,1,1,1,1,1,1,1,4,1,1,2,1,1,2,1,1,1,1,1,1,1,2,1,1,1,5,1,1,2,4,1,1,3,3,2,3,2,1,2,1,1,1,1,4,1,2,1,1,2,3,1,1,1,1,1,3,1,1,1,1,3,1,3,1,1,1,2,1,2,2,1,2,2,1,2,1,2,3,3,1,6,1,1,1,1,1,2,7,1,3,1,2,1,1,1,1,1,1,1,1,1,1,1,2,3,1,1,1,1,1,1,2,1,1,1,1,1,1,2,1,1,1,2,2,1,1,1,1,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,1,1,1,1,3,1,2,1,1,1,3,1,2,1,1,1,1,1,1,3,1,1,1,1,1,2,2,1,1,2,1,1,1,1,1,1,1,1,2,1,1,1,2,1,1,1,1,2,1,1,1,1,1,2,1,2,3,1,4,1,1,1,1,1,1,1,1,3,1,1,1,1,3,2,1,1,3,1,1,1,3,1,1,1,4,4,1,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,1,5,1,1,1,3,3,1,1,2,1,1,1,2,1,4,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],"type":"scatter3d","mode":"markers","marker":{"color":"rgba(102,194,165,1)","size":5,"opacity":0.80000000000000004,"line":{"color":"rgba(102,194,165,1)"}},"name":"benign","textfont":{"color":"rgba(102,194,165,1)"},"error_y":{"color":"rgba(102,194,165,1)"},"error_x":{"color":"rgba(102,194,165,1)"},"line":{"color":"rgba(102,194,165,1)"},"frame":null},{"x":[8,5,8,7,10,7,10,5,10,10,5,2,10,6,5,10,3,7,9,5,10,5,10,10,8,8,5,9,5,9,6,10,5,8,6,9,10,3,5,3,3,9,7,10,2,8,10,7,10,1,6,8,10,10,4,10,5,5,7,8,5,9,3,8,7,10,5,9,10,5,10,6,8,5,5,5,5,8,1,10,5,10,7,9,10,5,10,8,8,10,10,8,6,10,4,7,10,10,8,10,7,6,10,10,9,8,10,8,8,10,6,9,5,10,5,8,10,7,10,3,10,8,3,7,10,1,10,7,8,10,6,5,10,5,9,8,10,8,10,7,8,5,6,7,5,10,8,10,10,5,8,6,8,10,7,3,4,2,5,8,8,10,6,3,6,5,10,7,10,3,10,8,8,10,9,8,10,10,10,5,4,10,10,8,10,10,6,4,9,8,10,3,6,5,5,8,6,4,4,10,7,7,6,7,5,8,10,8,7,10,5,6,8,9,4,2,10,4,5,5,10,5,10,5,8,4,8,10,5,7,5,5,3,10,5,5,5,4,4],"y":[10,3,7,4,7,3,5,2,7,10,4,5,4,10,6,10,7,8,5,3,3,5,5,6,10,2,2,5,3,10,3,4,3,3,10,4,6,5,10,3,6,6,5,3,3,2,10,3,10,6,5,6,3,10,5,10,3,4,5,3,10,5,4,8,2,10,5,9,7,6,8,10,6,8,10,3,8,7,5,5,8,10,5,7,8,10,10,10,10,10,10,7,10,6,1,5,5,5,9,10,4,8,4,8,8,10,4,10,4,4,10,10,6,5,10,8,4,9,10,3,8,4,3,2,5,4,4,4,10,10,1,6,4,5,1,4,10,3,8,8,6,5,8,6,4,1,10,4,4,4,6,5,5,3,6,4,2,7,3,10,10,3,10,10,10,8,6,6,8,10,10,5,7,10,10,7,8,10,4,7,5,2,6,8,9,6,6,8,10,7,10,6,3,8,10,10,6,10,7,4,5,4,10,8,7,4,10,10,6,9,7,10,10,8,10,5,3,8,4,3,5,10,4,10,10,6,7,10,10,8,7,10,10,10,10,10,10,8,8],"z":[10,3,5,6,7,2,5,3,7,10,4,3,3,10,5,10,7,7,8,3,6,5,5,6,10,4,3,5,5,10,4,2,4,8,2,5,4,7,6,6,6,9,6,5,4,3,10,4,10,8,4,4,3,10,5,10,5,6,3,5,8,5,5,7,4,8,5,10,7,7,10,10,5,7,10,3,8,6,8,6,4,10,10,7,8,10,9,10,8,10,10,8,7,4,1,6,5,7,9,10,7,7,5,8,8,10,3,10,4,4,10,10,6,8,10,9,4,4,6,5,8,7,5,4,7,3,6,5,10,10,3,6,4,7,2,10,10,4,4,7,4,5,7,3,6,1,3,6,7,6,7,5,5,3,4,4,3,10,3,10,5,5,10,3,10,8,3,6,7,8,10,6,8,10,10,8,10,10,3,9,5,2,5,9,8,6,6,7,10,8,10,4,2,9,10,10,7,4,8,5,6,4,10,3,10,4,8,4,10,7,10,5,10,8,8,7,4,6,6,2,10,10,3,10,10,6,4,7,10,8,4,10,7,10,10,10,10,6,8],"type":"scatter3d","mode":"markers","marker":{"color":"rgba(252,141,98,1)","size":5,"opacity":0.80000000000000004,"line":{"color":"rgba(252,141,98,1)"}},"name":"malignant","textfont":{"color":"rgba(252,141,98,1)"},"error_y":{"color":"rgba(252,141,98,1)"},"error_x":{"color":"rgba(252,141,98,1)"},"line":{"color":"rgba(252,141,98,1)"},"frame":null},{"colorbar":{"title":"Class","ticklen":2,"len":0.5,"lenmode":"fraction","y":1,"yanchor":"top"},"colorscale":[[0,"lightblue"],[1,"lightpink"]],"showscale":true,"z":[[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],[1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],[1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],[1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],[1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],[1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],[1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],[1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],[1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],[1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],[1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],[1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],[1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],[1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],[1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],[1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],[1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],[1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],[1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2]],"type":"surface","x":[1,1.1836734693877551,1.3673469387755102,1.5510204081632653,1.7346938775510203,1.9183673469387754,2.1020408163265305,2.2857142857142856,2.4693877551020407,2.6530612244897958,2.8367346938775508,3.0204081632653064,3.2040816326530615,3.3877551020408165,3.5714285714285716,3.7551020408163267,3.9387755102040818,4.1224489795918373,4.3061224489795915,4.4897959183673475,4.6734693877551017,4.8571428571428577,5.0408163265306127,5.2244897959183678,5.4081632653061229,5.591836734693878,5.7755102040816331,5.9591836734693882,6.1428571428571432,6.3265306122448983,6.5102040816326534,6.6938775510204085,6.8775510204081636,7.0612244897959187,7.2448979591836737,7.4285714285714288,7.6122448979591839,7.795918367346939,7.9795918367346941,8.1632653061224492,8.3469387755102034,8.5306122448979593,8.7142857142857153,8.8979591836734695,9.0816326530612255,9.2653061224489797,9.4489795918367356,9.6326530612244898,9.8163265306122458,10],"y":[1,1.1836734693877551,1.3673469387755102,1.5510204081632653,1.7346938775510203,1.9183673469387754,2.1020408163265305,2.2857142857142856,2.4693877551020407,2.6530612244897958,2.8367346938775508,3.0204081632653064,3.2040816326530615,3.3877551020408165,3.5714285714285716,3.7551020408163267,3.9387755102040818,4.1224489795918373,4.3061224489795915,4.4897959183673475,4.6734693877551017,4.8571428571428577,5.0408163265306127,5.2244897959183678,5.4081632653061229,5.591836734693878,5.7755102040816331,5.9591836734693882,6.1428571428571432,6.3265306122448983,6.5102040816326534,6.6938775510204085,6.8775510204081636,7.0612244897959187,7.2448979591836737,7.4285714285714288,7.6122448979591839,7.795918367346939,7.9795918367346941,8.1632653061224492,8.3469387755102034,8.5306122448979593,8.7142857142857153,8.8979591836734695,9.0816326530612255,9.2653061224489797,9.4489795918367356,9.6326530612244898,9.8163265306122458,10],"surfacecolor":[[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]],"opacity":0.5,"frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</section>
 <section id="section-26" class="slide level2">
 <h2></h2>
 
-<img data-src="Hist4.png" style="width:20.0%" class="r-stretch"></section>
+<img data-src="diagram-model%20-%20Copy.png" class="quarto-figure quarto-figure-center r-stretch" style="width:100.0%"></section>
 <section id="section-27" class="slide level2">
 <h2></h2>
 
-<img data-src="Hist3_1.png" style="width:50.0%" class="r-stretch"></section>
-<section id="تصوير-البيانات" class="slide level2">
-<h2>تصوير البيانات</h2>
-<p>يعد تصور البيانات أحد الخطوات المهمة في عملية تحليل البيانات. هو ليس جزءًا من تحليل البيانات فحسب، بل يمكن اعتباره أيضًا فنًا</p>
-<h3 id="تفشي-وباء-الكوليرا-في-شارع-برود-عام-1854">تفشي وباء الكوليرا في شارع برود عام 1854</h3>
-<div dir="rtl">
-<p>تفشي وباء الكوليرا في شارع برود أو تفشي المربع الذهبي هو تفشي شديد للكوليرا حدث في عام 1854م بالقرب من شارع برود أو برود ستريت «شارع برودويك الآن» في منطقة سوهو في مدينة لندن عاصمة إنجلترا. تُوفّيَ بسبب هذه الجائحة 616 شخصا، واشتهر الطبيب جون سنو «15 مارس 1813 - 16 يونيو 1858» بدراسة أسبابها وله فرضية أن المياه الملوثة، وليس الهواء، كان مصدر الكوليرا، وكان سنو أول من أثبت في القرن التاسع عشر أنه يمكن منع انتقال الكوليرا إلى حد كبير عن طريق توفير مياه الشرب النظيفة للناس.</p>
-</div>
-</section></section>
-<section>
-<section id="section-28" class="title-slide slide level1 center">
-<h1></h1>
-<div class="columns">
-<div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="RPLOT.png" style="width:75.0%"></p>
-</figure>
-</div>
-</div><div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="Pump_Handle_-_John_Snow_.jpg" style="width:75.0%"></p>
-</figure>
-</div>
-</div>
-</div>
-</section>
-<section id="فلسفة-تمثيل-أو-تصوير-البيانات-الفن-المعرفي" class="slide level2">
-<h2>فلسفة تمثيل أو تصوير البيانات الفن المعرفي</h2>
-<div>
-<ol type="1">
-<li class="fragment"><p>إظهار البيانات</p></li>
-<li class="fragment"><p>حث المتلقى على التفكير في المادة العلمية التي أمامة.</p></li>
-<li class="fragment"><p>تلخيص البيانات الكبيرة بحيث يسهل على المتلقى إستيعابها.</p></li>
-<li class="fragment"><p>تصوير البيانات يخدم فكرة واضحة.</p></li>
-</ol>
-</div>
-</section></section>
-<section>
-<section id="section-29" class="title-slide slide level1 center">
-<h1></h1>
-
-<img data-src="HYPOXIAGENES_Corr_2nd_attempt.png" style="width:70.0%" class="r-stretch quarto-figure-center"></section>
-<section id="section-30" class="slide level2">
-<h2></h2>
-
-<img data-src="HYPOXIA_New_Fig3.png" style="width:70.0%" class="r-stretch quarto-figure-center"></section></section>
-<section id="section-31" class="title-slide slide level1 center">
-<h1></h1>
-
-<img data-src="HYPOXIA_Updated_Fig5_2.png" style="width:75.0%" class="r-stretch quarto-figure-center"></section>
-
-<section>
-<section id="section-32" class="title-slide slide level1 center">
-<h1></h1>
-
-<img data-src="WhatsApp%20Image%202023-01-03%20at%2010.54.52%20PM.jpeg" style="width:75.0%" class="r-stretch quarto-figure-center"></section>
-<section id="section-33" class="slide level2">
-<h2></h2>
-<h3 id="the-visual-display-of-quantitative-information">The Visual Display of Quantitative Information</h3>
-
-<img data-src="visual_display_of_quantitative_info.jpg" style="width:65.0%" class="r-stretch quarto-figure-center"></section>
-<section id="تحليل-البيانات" class="slide level2">
-<h2>تحليل البيانات</h2>
-<aside class="notes">
-<p>إحدى الأنشطة الأساسية في علم الإحصاء هي إنشاء نماذج يمكنها تلخيص البيانات باستخدام مجموعة صغيرة من الأرقام، مما يوفر وصفًا مختصرًا للبيانات</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-<h3 id="ما-هو-النموذج-الاحصائي">ما هو النموذج الاحصائي</h3>
-<p>النموذج الإحصائي هو تمثيل رياضي للعلاقات بين المتغيرات المختلفة.</p>
-<h4 id="لماذا-نستخدم-النماذج-الإحصائية">لماذا نستخدم النماذج الإحصائية؟</h4>
-<p>• <strong>التبسيط</strong>: يمكن أن تكون الظواهر في العالم الحقيقي معقدة. تساعد النماذج في تبسيط هذه التعقيدات لجعلها مفهومة.</p>
-<p>• <strong>التنبؤ</strong>: تتيح لنا النماذج إجراء تنبؤات حول الأحداث المستقبلية بناءً على البيانات الحالية.</p>
-<p>• <strong>الرؤية</strong>: تساعدنا في فهم العلاقات وتحديد العوامل المهمة التي تؤثر على النتائج.</p>
-</section>
-<section id="section-34" class="slide level2">
-<h2></h2>
-<div>
-<ul>
-<li class="fragment"><p>data = model + error</p></li>
-<li class="fragment"><p>model = <span class="math inline">\(\widehat{data}\)</span></p></li>
-<li class="fragment"><p>error = data - <span class="math inline">\(\widehat{data}\)</span></p></li>
-<li class="fragment"><h2 id="مثال-المسح-الوطني-للصحة-والتغذية">مثال : المسح الوطني للصحة والتغذية</h2></li>
-<li class="fragment"><p>نرغب في بناء نموذج احصائي لأطوال الأطفال</p></li>
-<li class="fragment"><div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="Hist5.png" style="width:35.0%"></p>
-</figure>
-</div></li>
-</ul>
-</div>
-</section>
-<section id="section-35" class="slide level2 scrollable">
-<h2></h2>
-<div>
-<ul>
-<li class="fragment"><p>model = <span class="math inline">\(\beta_0+\beta_1 x_1\)</span></p></li>
-<li class="fragment"><p>model = <span class="math inline">\(\beta_0+\beta_1 (age)\)</span></p></li>
-<li class="fragment"><div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="H1_1.png" style="width:70.0%"></p>
-</figure>
-</div></li>
-<li class="fragment"><p><span class="math inline">\(\beta_1 (age)\)</span></p></li>
-<li class="fragment"><div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="H2_2.png" style="width:70.0%"></p>
-</figure>
-</div></li>
-</ul>
-<p><span class="math inline">\(\beta_0+\beta_1 (age)\)</span> - <img data-src="H3_3.png" style="width:70.0%" data-fig-align="center"></p>
-<p><span class="math inline">\(\beta_0+\beta_1 (age)+\beta_2 (Gender)\)</span> - <img data-src="H4_4.png" style="width:70.0%" data-fig-align="center"></p>
-</div>
-</section></section>
-<section id="ما-الذي-يجعل-النموذج-جيدا" class="title-slide slide level1 center">
-<h1>ما الذي يجعل النموذج “جيدًا”؟</h1>
-<div>
-<ul>
-<li class="fragment"><p>البساطة وسهولة الفهم والتطبيق</p></li>
-<li class="fragment"><p>سهلت التعميم</p></li>
-<li class="fragment"><p>دقيقة في التنبؤ</p></li>
-<li class="fragment"><p>قابليتها لإعادة التحليل من قبل علماء اخرين ببيانات جديدة</p></li>
-</ul>
-</div>
-</section>
-
-<section id="هل-ممكن-ان-تكون-النتائج-ممتازة-جدا" class="title-slide slide level1 center">
-<h1>هل ممكن ان تكون النتائج ممتازة جدا ؟</h1>
-<ul>
-<li>تكون اذا كانت النتائج غير منطقية</li>
-</ul>
+<img data-src="test13_1.png" class="quarto-figure quarto-figure-center r-stretch" style="width:100.0%"><div class="quarto-auto-generated-content">
 <div class="footer footer-default">
 <p>اليوم العالمي للإحصاء - قسم الاحصاء (جامعة تبوك)</p>
 </div>
-</section>
+</div>
+</section></section>
     </div>
   </div>
 
@@ -1461,11 +648,11 @@
       Reveal.initialize({
 'controlsAuto': true,
 'previewLinksAuto': false,
-'smaller': false,
 'pdfSeparateFragments': false,
 'autoAnimateEasing': "ease",
 'autoAnimateDuration': 1,
 'autoAnimateUnmatched': true,
+'pdfMaxPagesPerSlide': 2,
 'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleChalkboard(event)\"><kbd>b</kbd> Toggle Chalkboard</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleNotesCanvas(event)\"><kbd>c</kbd> Toggle Notes Canvas</a></li>\n<li class=\"slide-tool-item\" data-item=\"6\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.downloadDrawings(event)\"><kbd>d</kbd> Download Drawings</a></li>\n<li class=\"slide-tool-item\" data-item=\"7\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
 'chalkboard': {"buttons":true},
 'smaller': false,
@@ -1761,10 +948,9 @@
         // clear code selection
         e.clearSelection();
       });
-      function tippyHover(el, contentFn) {
+      function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
         const config = {
           allowHTML: true,
-          content: contentFn,
           maxWidth: 500,
           delay: 100,
           arrow: false,
@@ -1774,8 +960,17 @@
           interactive: true,
           interactiveBorder: 10,
           theme: 'light-border',
-          placement: 'bottom-start'
+          placement: 'bottom-start',
         };
+        if (contentFn) {
+          config.content = contentFn;
+        }
+        if (onTriggerFn) {
+          config.onTrigger = onTriggerFn;
+        }
+        if (onUntriggerFn) {
+          config.onUntrigger = onUntriggerFn;
+        }
           config['offset'] = [0,0];
           config['maxWidth'] = 700;
         window.tippy(el, config); 
