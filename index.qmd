@@ -9,9 +9,8 @@ format:
     chalkboard: true
     pdf-max-pages-per-slide: 2
     footer: "اليوم العالمي للإحصاء - قسم الاحصاء (جامعة تبوك)"
+    background-image: background.jpg      
     transition: slide
-    title-slide-attributes: 
-      data-background-image: background.jpg
 ---
 
 
